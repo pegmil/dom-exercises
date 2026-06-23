@@ -1,2 +1,2 @@
 # dom-exercises
-Adding in first comment to ensure linkint to github
+Adding in first comment to ensure link in to github
