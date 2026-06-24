@@ -4,31 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Mouse Location Demo</title>
-    <style>
-        #track {
-            background-color: goldenrod;
-            height: 200px;
-            width: 400px;
-        }
-    </style>
+    <title>JS Keyboard Action Demo</title>
 
 </head>
 
 <body>
-    <p>Move your mouse to see its location.</p>
-    <div id="track"></div>
-    <p id="log"></p>
+    <input type="text" id="message">
 
     <script>
-        let track = document.querySelector('#track');
-        track.addEventListener('mousemove', (e) => {
-            let log = document.querySelector('#log');
-            log.innerText = `
-            Screen X/Y: (${e.screenX}, ${e.screenY})
-            Client X/Y: (${e.clientX}, ${e.clientY})`
+        let textBox = document.getElementById('message');
+        textBox.addEventListener('keydown', (event) => {
+        console.log(`key=${event.key},code=${event.code}`);
+
         });
-    </script>
+        </script>
 </body>
 
 </html>
